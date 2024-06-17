@@ -11,6 +11,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <main class="d-flex flex-nowrap">
+      <%= render "shared/sidebar" %>
+      <%= yield %>
+    </main>
   </body>
 </html>
