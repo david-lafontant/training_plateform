@@ -13,7 +13,10 @@
   <body>
     <main class="d-flex flex-nowrap">
       <%= render "shared/sidebar" %>
+      <div>
+      <%= render "shared/flash" %>
       <%= yield %>
+      </div>
     </main>
   </body>
 </html>
