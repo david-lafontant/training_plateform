@@ -1,2 +1,11 @@
 // Styling rules for the side bar
-.dropdown-toggle { outline: 0; }
+
+#sidebar{
+    .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+        width: 1.1rem; 
+        height: 1.1rem;
+      }
+      .dropdown-toggle { outline: 0; }
+}
