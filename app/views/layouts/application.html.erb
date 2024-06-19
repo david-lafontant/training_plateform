@@ -12,8 +12,13 @@
 
   <body>
     <main class="d-flex flex-nowrap">
+    <% if current_user %>
       <%= render "shared/sidebar" %>
+    <%end%>
+      <div>
+      <%= render "shared/flash" %>
       <%= yield %>
+      </div>
     </main>
   </body>
 </html>

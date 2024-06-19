@@ -1,4 +1,13 @@
 <div class="container" id="home">
+<div class="container">
+<% if user_signed_in? %> 
+ <div> Welcome <%= current_user.email %> </div> 
+  <%= button_to "Sign out", destroy_user_session_path, method: :delete %> 
+<% else %>
+  <%= button_to "Sign in", new_user_session_path %> 
+<% end %>
+</div>
+
 <div class="container my-5">
   <div class="p-5 text-center bg-body-tertiary rounded-3">
     <h1 class="text-body-emphasis">Plateform d&apos;apprentissage</h1>
